@@ -19,7 +19,7 @@
     <div data-to="top" class="p-block"><i class="czs-arrow-up-l puock-text"></i></div>
     <div data-to="bottom" class="p-block"><i class="czs-arrow-down-l puock-text"></i></div>
 </div>
-<footer id="footer">
+<footer id="footer" class="puock-dark">
     <div class="container">
         <div class="row row-cols-md-1">
             <?php if (!empty(pk_get_option('footer_about_me_title', ''))): ?>

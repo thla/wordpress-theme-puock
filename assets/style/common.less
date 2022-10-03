@@ -368,3 +368,47 @@ a{
 .p-bg-primary {
 
 }
+
+.front-hero {
+  background-image: url("http://air2.local/2022/10/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: calc(100vh - 65px);
+}
+
+.church-img {
+  content: url("http://air2.local/2022/10/church_heidl.png");
+}
+
+.arrow {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+

@@ -38,17 +38,15 @@
     <?php endif; ?>
     <div id="header-box" class="<?php pk_open_box_animated('animated fadeInDown') ?>"></div>
     <header id="header"
-            class="<?php pk_open_box_animated('animated fadeInDown') ?> <?php if (pk_is_checked('nav_blur')) {
+            class="puock-dark font-weight-bold <?php pk_open_box_animated('animated fadeInDown') ?> <?php if (pk_is_checked('nav_blur')) {
                 echo 'blur';
             } ?>">
         <div class="navbar navbar-dark shadow-sm">
             <div class="container">
                 <a href="<?php echo home_url() ?>" id="logo" class="navbar-brand">
                     <?php if (!pk_is_checked('on_txt_logo') || empty(pk_get_option('light_logo'))): ?>
-                        <img id="logo-light" alt="logo" class="w-100 <?php echo pk_theme_light() ? '' : 'd-none' ?>"
-                             src="<?php echo pk_get_option('light_logo') ?>">
-                        <img id="logo-dark" alt="logo" class="w-100 <?php echo pk_theme_light() ? 'd-none' : '' ?>"
-                             src="<?php echo pk_get_option('dark_logo') ?>">
+                        <img id="logo-light" alt="logo" class="w-100 "
+                             src="<?php echo pk_get_option('dark_logo') ?>"> 
                     <?php else: ?>
                         <span class="puock-text txt-logo"><?php echo pk_get_web_title() ?></span>
                     <?php endif; ?>
